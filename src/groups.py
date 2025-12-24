@@ -7,7 +7,7 @@ import random
 
 
 word_lists = (
-    ("animals from sahara", "giraffe", "elephant", "lion", "mouse"),
+    ("animals from Africa", "giraffe", "elephant", "lion", "mouse"),
     ("relationship or association between people, things, or ideas", "connection", "tie", "bond", "link"),
     ("verbs meaning to join", "connect", "attach", "link", "fasten"),
     ("group of people connected socially or professionally", "network", "circle", "clique", "cohort"),
@@ -30,6 +30,5 @@ def get_groups(group = word_lists) -> tuple:
     :return: tuple of 4 items from passed list
     """
     return tuple(random.sample(group, 4))
-
 
 
